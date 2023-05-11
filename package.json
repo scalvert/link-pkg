@@ -1,7 +1,7 @@
 {
   "name": "link-pkg",
   "version": "0.0.1",
-  "description": "Links an external package's tarball to a target package",
+  "description": "Link another package's tarball to this package",
   "keywords": [
     "link",
     "link-package"
@@ -19,7 +19,8 @@
     "meow": "^12.0.1"
   },
   "devDependencies": {
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.0"
   },
   "volta": {
     "node": "16.20.0",
