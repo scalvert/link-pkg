@@ -14,6 +14,8 @@
     "test": "test"
   },
   "dependencies": {
+    "execa": "^7.1.1",
+    "log-symbols": "^5.1.0",
     "meow": "^12.0.1"
   },
   "devDependencies": {
