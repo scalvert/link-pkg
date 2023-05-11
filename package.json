@@ -2,17 +2,20 @@
   "name": "link-pkg",
   "version": "0.0.1",
   "description": "Links an external package's tarball to a target package",
+  "keywords": [
+    "link",
+    "link-package"
+  ],
+  "license": "MIT",
+  "author": "Steve Calvert <steve.calvert@gmail.com>",
   "main": "index.js",
   "bin": "bin/link-pkg",
   "scripts": {
     "test": "test"
   },
-  "keywords": [
-    "link",
-    "link-package"
-  ],
-  "author": "Steve Calvert <steve.calvert@gmail.com>",
-  "license": "MIT",
+  "dependencies": {
+    "meow": "^12.0.1"
+  },
   "devDependencies": {
     "typescript": "^5.0.4"
   },
