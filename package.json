@@ -1,5 +1,5 @@
 {
-  "name": "link-pkg",
+  "name": "@scalvert/link-pkg",
   "version": "0.0.1",
   "description": "Link another package's tarball to this package",
   "keywords": [
