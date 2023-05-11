@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Links an external package's tarball to a target package",
   "main": "index.js",
+  "bin": "bin/link-pkg",
   "scripts": {
     "test": "test"
   },
@@ -14,5 +15,9 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.0.4"
+  },
+  "volta": {
+    "node": "16.20.0",
+    "npm": "9.6.6"
   }
 }
