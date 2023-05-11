@@ -14,7 +14,7 @@ const cli = meow(
 	  $ npx link-pkg <package path>
 
 
-	Examples
+	Example
 	  $ npx link-pkg ../some-other-package
     ✔ Successfully linked some-other-package.tar.gz to my-package
 `,
