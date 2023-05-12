@@ -11,10 +11,10 @@ const cli = meow(
   Links another package's tarball to this package.
 
 	Usage
-	  $ npx @scalvert/link-pkg <package path>
+	  $ npx link-tarball <package path>
 
 	Example
-	  $ npx @scalvert/link-pkg ../some-other-package
+	  $ npx link-tarball ../some-other-package
     ✔ Successfully linked some-other-package.tar.gz to my-package
 `,
   {

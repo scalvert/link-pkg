@@ -1,5 +1,5 @@
 {
-  "name": "@scalvert/link-pkg",
+  "name": "link-tarball",
   "version": "0.0.4",
   "description": "Link another package's tarball to this package",
   "keywords": [
@@ -8,13 +8,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/scalvert/link-pkg.git"
+    "url": "https://github.com/scalvert/link-tarball.git"
   },
   "license": "MIT",
   "author": "Steve Calvert <steve.calvert@gmail.com>",
-  "bin": {
-    "index": "./bin/index.mjs"
-  },
+  "bin": "./bin/index.mjs",
   "scripts": {
     "test": "test"
   },
