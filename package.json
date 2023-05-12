@@ -12,7 +12,9 @@
   },
   "license": "MIT",
   "author": "Steve Calvert <steve.calvert@gmail.com>",
-  "bin": "./bin/index.mjs",
+  "bin": {
+    "index": "./bin/index.mjs"
+  },
   "scripts": {
     "test": "test"
   },
