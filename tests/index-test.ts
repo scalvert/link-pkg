@@ -1,5 +1,6 @@
 import { fileURLToPath } from 'url';
 import fs from 'fs';
+import path from 'path';
 import { describe, beforeEach, afterEach, test, expect } from 'vitest';
 import { createBinTester } from '@scalvert/bin-tester';
 import { Project } from 'fixturify-project';
@@ -60,12 +61,12 @@ describe('link-tarball', () => {
 
     let result = await runBin(otherPackage.baseDir);
     let projectPackageJson = JSON.parse(
-      fs.readFileSync(`${project.baseDir}/package.json`, 'utf8')
+      fs.readFileSync(path.join(project.baseDir, 'package.json'), 'utf8')
     );
 
     expect(result.exitCode).toEqual(0);
     expect(result.stdout).toEqual(
-      `✔ Successfully linked ${otherPackage.baseDir}\/some-other-package-1.0.0.tgz to ${project.baseDir}`
+      `✔ Successfully linked ${otherPackage.baseDir}${path.sep}some-other-package-1.0.0.tgz to ${project.baseDir}`
     );
     expect(
       Object.keys(projectPackageJson.dependencies).includes(
@@ -89,12 +90,12 @@ describe('link-tarball', () => {
 
     let result = await runBin(otherPackage.baseDir);
     let projectPackageJson = JSON.parse(
-      fs.readFileSync(`${project.baseDir}/package.json`, 'utf8')
+      fs.readFileSync(path.join(project.baseDir, 'package.json'), 'utf8')
     );
 
     expect(result.exitCode).toEqual(0);
     expect(result.stdout).toEqual(
-      `✔ Successfully linked ${otherPackage.baseDir}\/some-other-package-1.0.0.tgz to ${project.baseDir}`
+      `✔ Successfully linked ${otherPackage.baseDir}${path.sep}some-other-package-1.0.0.tgz to ${project.baseDir}`
     );
     expect(
       Object.keys(projectPackageJson.devDependencies).includes(
