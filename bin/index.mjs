@@ -8,14 +8,12 @@ import meow from 'meow';
 
 const cli = meow(
   `
-  Links another package's tarball to this package.
-
 	Usage
 	  $ npx link-tarball <package path>
 
 	Example
 	  $ npx link-tarball ../some-other-package
-    ✔ Successfully linked some-other-package.tar.gz to my-package
+   ✔ Successfully linked some-other-package.tar.gz to my-package
 `,
   {
     importMeta: import.meta,
