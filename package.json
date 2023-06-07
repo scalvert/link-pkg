@@ -14,7 +14,7 @@
   "author": "Steve Calvert <steve.calvert@gmail.com>",
   "bin": "./bin/index.mjs",
   "scripts": {
-    "test": "test"
+    "test": "vitest run"
   },
   "dependencies": {
     "execa": "^7.1.1",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@release-it-plugins/lerna-changelog": "^5.0.0",
+    "@scalvert/bin-tester": "^2.1.1",
     "release-it": "^15.5.0",
     "typescript": "^5.0.4",
     "vitest": "^0.31.0"
