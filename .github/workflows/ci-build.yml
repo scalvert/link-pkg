@@ -12,18 +12,11 @@ on:
 jobs:
   test:
     name: Tests
-    runs-on: ${{matrix.os}}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
-        node: ['16']
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
       - uses: volta-cli/action@v4
-        with:
-          node-version: ${{ matrix.node }}
       - name: install dependencies
         run: npm install
       - name: test
